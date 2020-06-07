@@ -244,17 +244,17 @@ Minitest comes in two syntax flavors: assertion style and expectation style. The
 Assertions
 ---
 
-For a full list of assertions, click [here](http://docs.seattlerb.org/minitest/Minitest/Assertions.html)
+For a full list of assertions, click [here].(http://docs.seattlerb.org/minitest/Minitest/Assertions.html)
 
 Here are a few of the popular ones:
 
-**Assertion**                           **Description**
-`assert(test)`                     Fails unless `test` is truthy.
-`assert_equal(exp, act)`           Fails unless `exp == act`.
-`assert_nil(obj)`                  Fails unless `obj` is `nil`.
-`assert_raises(*exp) { ... }`      Fails unless block raises one of `*exp`.
-`assert_instance_of(cls, obj)`     Fails unless `obj` is an instance of `cls`.
-`assert_includes(collection, obj)` Fails unless `collection` includes `obj`.
+**Assertion**            -               **Description**
+* `assert(test)`                     Fails unless `test` is truthy.
+* `assert_equal(exp, act)`           Fails unless `exp == act`.
+* `assert_nil(obj)`                  Fails unless `obj` is `nil`.
+* `assert_raises(*exp) { ... }`      Fails unless block raises one of `*exp`.
+* `assert_instance_of(cls, obj)`     Fails unless `obj` is an instance of `cls`
+* `assert_includes(collection, obj)` Fails unless `collection` includes `obj`.
 
 `assert_equal` uses `==` for _value equality_ while `assert_same` tests for _object equality_.
 
@@ -275,7 +275,3 @@ There are usually 4 steps to writing a test:
 **Code Coverage**
 
 When writing tests, we want to get an idea of code coverage, or how much of our actual program code is tested by a test suite. You can see from our TodoList tests that all of our public methods are covered. If we are measuring code coverage based on testing the public methods, we could say that we have achieved 100% code coverage. Note that even though we are only testing public code, code coverage is based on all of your code, both public and private. Also, this doesn't mean every edge case is considered, or that even our program is working correctly. It only means that we have some tests in place for every method. There are other ways to measure code coverage too besides looking at public methods. For example, more sophisticated tools can help with ensuring that all branching logic is tested. While not foolproof, code coverage is one metric that you can use to gauge code quality.
-
-
-
-
